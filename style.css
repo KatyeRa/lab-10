@@ -5,11 +5,33 @@ body {
     flex-direction: column;
 }
 
-h1, h2,h3 {
-  font-family: "Open Sans",sans-serif; 
+h1, h2, h3, p {
+  font-family: "Open Sans",sans-serif;
   margin: .5em;
 }
 
 form {
   margin-top: 50px;
+}
+#wins {
+  display: flex;
+  justify-content: center;
+}
+#first, #second {
+    margin: 1em;
+}
+
+button {
+  border: 0;
+  padding: 1em 1em;
+  margin: 1em;
+  color: rgb(0, 0, 0);
+}
+
+#newRound {
+  background: RGB(61, 215, 19);
+}
+
+#reset {
+  background: RGB(215, 19, 19);
 }
