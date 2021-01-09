@@ -4,3 +4,12 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
+h1, h2,h3 {
+  font-family: "Open Sans",sans-serif; 
+  margin: .5em;
+}
+
+form {
+  margin-top: 50px;
+}
