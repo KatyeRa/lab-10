@@ -32,6 +32,10 @@ button {
   background: RGB(61, 215, 19);
 }
 
-#reset {
+#newPlay {
   background: RGB(215, 19, 19);
 }
+
+canvas {
+    margin-top: 10px;
+}s
