@@ -5,20 +5,14 @@ body {
     flex-direction: column;
 }
 
-h1, h2, h3, p {
+h1, h2, h3,h4, p {
   font-family: "Open Sans",sans-serif;
   margin: .5em;
+  text-align: center;
 }
-
-form {
-  margin-top: 50px;
-}
-#wins {
-  display: flex;
-  justify-content: center;
-}
-#first, #second {
-    margin: 1em;
+div{
+  font-family: "Open Sans",sans-serif;
+  text-align: center;
 }
 
 button {
@@ -26,16 +20,32 @@ button {
   padding: 1em 1em;
   margin: 1em;
   color: rgb(0, 0, 0);
+  text-align: center;
 }
 
-#newRound {
+.control__new-round {
   background: RGB(61, 215, 19);
 }
 
-#newPlay {
+.control__reset {
   background: RGB(215, 19, 19);
 }
+.control {
+	margin: 30px 0;
+}
 
-canvas {
-    margin-top: 10px;
-}s
+.control__new-round, .control__reset {
+	border: none;
+	outline: none;
+	font: inherit;
+
+	cursor: pointer;
+	transition: background-color .3s ease;
+
+	width: 200px;
+	height: 50px;
+	padding: 0;
+	font-size: 28px;
+
+	color: #fff;
+}

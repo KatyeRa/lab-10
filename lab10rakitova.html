@@ -10,24 +10,49 @@
   <title>lab10rakitova</title>
 
 </head>
-<body>
-<h1>Крестики-нолики</h1>
-<p>Простая игра в крестики-нолики. Первым ходит победитель</p>
-<h2>Колличество побед</h2>
-<div id="wins">
-    <div id="first">Первый игрок:</div>
-    <div id="second">Второй игрок:</div>
-</div>
-<h3>Ход</h3>
-<div id="move"></div>
-<canvas height="300" width="300" id="field">
-  </canvas>
-  <form>
-      <button id="newRound" type="button">Новый раунд</button>
-      <button id="newPlay" type="button">Новая игра</button>
-  </form>
 
-<script src="script.js"> </script>
+<body class="body">
 
-</body>
+	<main class="main">
+		<h1>Крестики-нолики</h1>
+		<h3>Простая игра в крестики-нолики. Первым ходит победитель.</h3>
+
+		<div class="info">
+			<h4 >Количество побед</h4>
+
+			<div class="info__wrapper">
+				<div class="info__first-player">Первый игрок "X": <span class="info__first-counter">0</span></div>
+				<div class="info__second-player">Второй игрок "O": <span class="info__second-counter">0</span></div>
+			</div>
+		</div>
+
+		<div class="info">
+			<h4 class="info__title">Ход</h4>
+
+			<div class="info__wrapper">
+				Ходит игрок - <span class="info__first-move">X</span>
+			</div>
+		</div>
+
+		<canvas id="game" width="600" height="600"></canvas>
+
+		<div class="control">
+			<button class="control__new-round">Новый</button>
+			<button class="control__reset">Сброс</button>
+		</div>
+	</main>
+
+    <script src="script.js"></script>
+    <script>
+  const game = new TicTacToe({
+    canvas: '#game',
+    firstCounter: '.info__first-counter',
+    secondCounter: '.info__second-counter',
+    btnNewRound: '.control__new-round',
+    btnReset: '.control__reset',
+    currentMove: '.info__first-move'
+  });
+</script>
+
+  </body>
 </html>
